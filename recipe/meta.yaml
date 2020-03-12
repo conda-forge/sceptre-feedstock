@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - sceptre = sceptre.cli:cli
   script: "{{ PYTHON }} -m pip install . -vv "
@@ -70,3 +70,5 @@ about:
 extra:
   recipe-maintainers:
     - adbeda
+    - rluria14
+    - oblute

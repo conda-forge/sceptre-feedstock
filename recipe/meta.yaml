@@ -1,20 +1,20 @@
 {% set name = "sceptre" %}
-{% set version = "2.3.0" %}
+{% set version = "2.4.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://github.com/Sceptre/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 1a6631661288f68f51b5f57c83969174dd2366324cbc81fb14cc4d08c1f14131
+  sha256: d740394988bfbf7d2ba35f14d7ff20f49212dec5914b5887f95bd8b8531d379a
 
 build:
   noarch: python
-  number: 1
+  number: 0
   entry_points:
     - sceptre = sceptre.cli:cli
-  script: "{{ PYTHON }} -m pip install . -vv "
+  script: '{{ PYTHON }} -m pip install . -vv '
 
 requirements:
   host:
@@ -58,14 +58,14 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: "Cloud Provisioning Tool"
+  summary: Cloud Provisioning Tool
   description: |
-   Sceptre is a tool to drive CloudFormation. It manages the creation,
-   update and deletion of stacks while providing meta commands which allow
-   users to retrieve information about their stacks.
+    Sceptre is a tool to drive CloudFormation. It manages the creation,
+    update and deletion of stacks while providing meta commands which allow
+    users to retrieve information about their stacks.
 
-  doc_url: "https://sceptre.cloudreach.com/2.1.5/"
-  dev_url: "https://github.com/Sceptre/sceptre"
+  doc_url: https://sceptre.cloudreach.com/2.1.5/
+  dev_url: https://github.com/Sceptre/sceptre
 
 extra:
   recipe-maintainers:

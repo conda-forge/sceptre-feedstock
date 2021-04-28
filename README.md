@@ -5,7 +5,7 @@ Home: https://github.com/cloudreach/sceptre
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Cloud Provisioning Tool
 
@@ -120,4 +120,6 @@ Feedstock Maintainers
 =====================
 
 * [@adbeda](https://github.com/adbeda/)
+* [@oblute](https://github.com/oblute/)
+* [@rluria14](https://github.com/rluria14/)
 

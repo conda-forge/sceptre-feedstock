@@ -1,5 +1,5 @@
 {% set name = "sceptre" %}
-{% set version = "2.6.1" %}
+{% set version = "2.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Sceptre/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: d8e66e5659e507606d8f9f062930a5666bd035d5758d182dd94748801679a9fb
+  sha256: 94c22958a9055676a4930f7f1f28e0e1f38ccc09633f5172dc80e7c125f40326
 
 build:
   noarch: python

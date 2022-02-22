@@ -1,5 +1,5 @@
 {% set name = "sceptre" %}
-{% set version = "2.7.1" %}
+{% set version = "3.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sceptre-{{ version }}.tar.gz
-  sha256: e104af806bcbef41d6c36494d13997714df5e53ba213d3c1e0a74d003feb443e
+  sha256: c76ec7f95ccfa403dc47e41daa496efff7a4771028236d364c6f4fa1c73bbe80
 
 build:
   number: 0
